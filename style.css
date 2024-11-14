@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wrapper {
+    font-family: sans-serif;
+    /* overflow: hidden; */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .container {
+    max-width: 1680px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    padding: 25px 0;
+    position: relative;
+  }
+  
+  .header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__logo {
+    cursor: pointer;
+    font-size: 48px;
+  }
+  
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__nav-link {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 45px 20px 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: color 0.15s;
+  }
+  
+  .header__nav-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #ffff;
+    transform: translateY(-130%);
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header__nav-popup.active {
+    transform: translateY(0);
+  }
+  
+  .header__close {
+    display: none;
+  }
+  
+  .header__close.active {
+    display: block;
+  }
+  
+  .header__menu-button.active {
+    display: none;
+  }
+  
+  .header__menu { 
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    height: 88vh;
+    width: 15%;
+    transform: translateX(100%);
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .header__menu.active {
+    transform: translateX(0);
+  }
+
+  .header__nav-popup-row{
+    display: flex;
+    gap: 32px;
+  }
+  .header__nav-popup-title{
+    font-family: sans-serif;
+    font-size: 48px;
+     margin-top: 48px;
+     margin-left: 56px;
+  }
+
+  
+
+  .subtitle{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 48px;
+    margin-left: 24px; 
+ }
+ .links{
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 24px;
+ }
+ .popup-subtitle{
+ font-family: sans-serif;
+ font-size: 16px;
+ margin-top: 48px;
+ margin-left: 24px;
+ }
+ 
+ .popup-links{
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif ;
+  
+ }
+
+ .header-popup__subtitle{
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 48px;
+  margin-left: 24px; 
+ }
+ .header-nav__links{
+ display: flex;
+ flex-direction: column;
+}
+
+.header__nav-popup-row{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-left: 48px;
+}
+
+
+  a{
+    background-color: #ffff;
+}
+a:hover{
+    color: orange;
+}
+a:hover path{
+    transition: all 0.3s ease;
+}
+
+.search-button:hover{
+  color: orange;    
+}
+
+.search-button:hover path{
+    transition: all 0.3s ease;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+}
+
+
+.banner-image{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+}
+
+
+
+.banner-image img{
+    width: 100%;
+}
+.banner-content{
+    text-align: left;
+}
+
+.banner-subtitle{
+    font-family: sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.banner-title{
+    font-size: 48px;
+    position: absolute;
+    top: 18%;
+    left:10%;
+    margin-bottom:48px;
+}
+
+.container{
+    text-align: left;
+}
+
+.new-title{
+    font-family: sans-serif;
+    font-size: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.new-subtitle{
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-bottom: 48px;
+}
+
+.products-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products-title{
+    font-size: 48px;
+}
+
+.products-subtitle{
+    font-size: 14px;
+}
+
+.about-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content{
+    text-align: left;
+    gap: 24px;
+}
+
+.about-toptitle{
+    font-family: sans-serif;
+    font-size: 48px;
+}
+
+.about-text{
+    font-family: sans-serif;
+    font-size: 24px;
+    
+}
+
+.about-subtitle{
+    margin-bottom: 56px;
+}
+
+
+.about-icon{
+    display: flex;
+    gap: 48px;
+    flex-wrap: 1;
+}
+
+
+
+
